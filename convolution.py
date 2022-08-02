@@ -86,7 +86,6 @@ def combined(A, G_x = None, G_y = None, stride = 1):
             multiplied_v = matrix_section *  G_y
             vert_sum = np.sum(multiplied_v)
             
-            result = np.absolute(horizon_sum) + np.absolute(vert_sum)
             result = math.sqrt(horizon_sum**2 + vert_sum**2)
             
             anchor[i][j] = result
